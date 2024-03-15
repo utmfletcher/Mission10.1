@@ -15,20 +15,12 @@ namespace Mission10._1._1.Controllers
         
         }
 
-        //[HttpGet]
-        //public IEnumerable<Bowlers> Get()
-        //{
-        //    var bowlerData = _bowlerRepository.Bowlers.ToArray();
-
-        //    return bowlerData;
-        //}
-
         [HttpGet]
-        public IEnumerable<object> Get(Teams Teams)
+        public IEnumerable<object> Get()
         {
             var joinedData = from Bowlers in _bowlerRepository.Bowlers
-                             join eams in _bowlerRepository.Teams on Bowlers.TeamID equals Teams.TeamID
-                             select new Bowlers
+                             join Teams in _bowlerRepository.Teams on Bowlers.TeamID equals Teams.TeamID
+                             select new JoinedBowler
                              {
                                  BowlerMiddleInit = Bowlers.BowlerMiddleInit,
                                  BowlerAddress = Bowlers.BowlerAddress,

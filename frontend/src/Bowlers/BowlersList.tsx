@@ -38,7 +38,7 @@ function BowlersList() {
               <td>{b.bowlerFirstName}</td>
               <td>{b.bowlerMiddleInit}</td>
               <td>{b.bowlerLastName}</td>
-              <td></td>
+              <td>{b.teamName}</td>
               <td>{b.bowlerAddress}</td>
               <td>{b.bowlerCity}</td>
               <td>{b.bowlerState}</td>

@@ -19,9 +19,9 @@ namespace Mission10._1._1.Data
         public string BowlerZip { get; set; }
         public string BowlerPhoneNumber { get; set; }
 
-
+        [ForeignKey("Teams")]
         public int TeamID { get; set; }
-
+        
 
         
     }
