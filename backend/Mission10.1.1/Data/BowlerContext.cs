@@ -11,5 +11,8 @@ namespace Mission10._1._1.Data
         }
 
         public DbSet<Bowlers> Bowlers { get; set; }
+
+        public DbSet<Teams> Teams { get; set; } 
+
     }
 }

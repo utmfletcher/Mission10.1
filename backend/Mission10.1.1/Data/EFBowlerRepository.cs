@@ -8,5 +8,6 @@ namespace Mission10._1._1.Data
             _BowlerContext = temp;
         }
         public IEnumerable<Bowlers> Bowlers => _BowlerContext.Bowlers;
+        public IEnumerable<Teams>   Teams => _BowlerContext.Teams;
     }
 }

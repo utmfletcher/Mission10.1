@@ -21,22 +21,24 @@ function BowlersList() {
       <table className="table table-bordered">
         <thead>
           <tr>
-            <th>BowlerLastName</th>
-            <th>BowlerFirstName</th>
-            <th>BowlerMiddleInit</th>
-            <th>BowlerAddress</th>
-            <th>BowlerCity</th>
-            <th>BowlerState</th>
-            <th>BowlerZip</th>
-            <th>BowlerPhoneNumber</th>
+            <th>First Name</th>
+            <th>Middle Initial</th>
+            <th>Last Name</th>
+            <th>Team Name </th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Phone Number</th>
           </tr>
         </thead>
         <tbody>
           {bowlerData.map((b) => (
             <tr key={b.bowlerID}>
-              <td>{b.bowlerLastName}</td>
               <td>{b.bowlerFirstName}</td>
               <td>{b.bowlerMiddleInit}</td>
+              <td>{b.bowlerLastName}</td>
+              <td></td>
               <td>{b.bowlerAddress}</td>
               <td>{b.bowlerCity}</td>
               <td>{b.bowlerState}</td>

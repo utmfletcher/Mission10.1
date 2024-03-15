@@ -1,10 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Mission10._1._1.Data
 {
     public class Bowlers
     {
+        public string TeamName;
+
         [Key]
         public int BowlerID { get; set; } 
         public string BowlerLastName { get; set; }
@@ -15,7 +18,12 @@ namespace Mission10._1._1.Data
         public string BowlerState { get; set; }
         public string BowlerZip { get; set; }
         public string BowlerPhoneNumber { get; set; }
+
+
         public int TeamID { get; set; }
+
+
+        
     }
 
 }
