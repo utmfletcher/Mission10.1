@@ -43,3 +43,54 @@
   height: auto; /* Maintain the aspect ratio */
   display: block; /* Ensure the image is treated as a block element */
 }
+.card {
+  width: auto; /* Adjust the width as needed */
+  max-width: 200px; /* Limit the maximum width of the card */
+  height: 200px; /* Fixed height for square cards */
+  border-radius: 10px; /* Rounded corners */
+  margin-right: 20px; /* Adjust margin as needed */
+  overflow: hidden; /* Hide content overflow */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+  justify-content: space-around; /* Align cards evenly in the container */
+}
+
+.card .card-body {
+  width: 100%; /* Adjusted to take full width of the card */
+  height: 100%; /* Make card body fill the entire height of the card */
+  background-color: #f8f9fa; /* Background color for card body */
+  display: flex; /* Use flexbox for aligning content */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: center; /* Center align content vertically */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table header */
+.table th {
+  background-color: #f8f9fa;
+  color: #333;
+  font-weight: bold;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Table body */
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect */
+.table tbody tr:hover {
+  background-color: #f0f0f0;
+}
